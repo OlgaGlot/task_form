@@ -1,0 +1,154 @@
+@import "_variables.scss";
+
+.form {
+    @media(max-width: 1144px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media(max-width: 450px) {
+        background-color: $bgFormPart2;
+        padding-top: 40px;
+        box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+        margin-top: 60px;
+        margin-bottom: 59px;
+    }
+
+    &_part_1 {
+        @media(max-width: 600px) {
+            width: 410px;
+            height: 390px;
+            background-size: cover;
+        }
+        @media(max-width: 450px) {
+            background-image: url(../img/Reduslim_img_small.svg);
+            width: 280px;
+            height: 234px;
+        }
+    }
+
+    &_part_2 {
+        @media(max-width: 600px) {
+            width: 410px;
+        }
+        @media(max-width: 450px) {
+            border: none;
+            box-shadow: none;
+            width: 100%;
+        }
+
+        &_h1_big {
+            @media(max-width: 450px) {
+                display: none;
+            }
+        }
+
+        &_h1_small {
+            @media(max-width: 450px) {
+                display: block;
+                background-color: $bgFormPart2;
+                padding-bottom: 28px;
+            }
+        }
+
+        &_container {
+            @media(max-width: 450px) {
+                width: 288.18px;
+            }
+
+            p:nth-child(1) {
+                @media(max-width: 450px) {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+            }
+
+            p {
+
+                & select {
+                    @media(max-width: 450px) {
+                        padding-left: 10px;
+                    }
+                }
+
+                .name {
+                    @media(max-width: 450px) {
+                        width: 256px;
+                    }
+                }
+
+                .telephone {
+                    @media(max-width: 450px) {
+                        width: 154px;
+                        margin-right: 4px;
+                        margin-bottom: 28px;
+                    }
+                }
+
+                select {
+                    @media(max-width: 450px) {
+                        width: 94.18px;
+                    }
+
+                    option {
+                        @media(max-width: 450px) {
+                            padding-left: 10px;
+                        }
+                    }
+
+                    &.icon-ru,
+                    &.icon-en {
+                        @media(max-width: 450px) {
+                            padding-left: 10px;
+                        }
+                    }
+
+                    &.icon-ru {
+                        @media(max-width: 450px) {
+                            background-position: 42px 16px;
+                        }
+                    }
+
+                    &.icon-en {
+                        @media(max-width: 450px) {
+                            background-position: 42px 16px;
+                        }
+                    }
+                }
+            }
+
+            .btn_zakaz {
+                @media(max-width: 450px) {
+                    padding-left: 94.5px;
+                    width: 185.5px;
+                    margin-bottom: 28px;
+                }
+            }
+        }
+
+        
+    }
+
+    &_footer {
+        @media(max-width: 450px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $formPart2h1BigBg;
+        }
+
+        img {
+            @media(max-width: 450px) {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 12.14px;
+                height: 15px;
+            }
+        }
+
+        p {
+            margin-top: 11px;
+            margin-bottom: 11px;
+        }
+    }
+}
+

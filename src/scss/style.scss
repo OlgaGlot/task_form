@@ -1,0 +1,252 @@
+@import "_variables.scss";
+
+body {
+    background-color: $backgrColor;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1120px;
+    width: 100%;
+}
+
+.form {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+
+    &_part_1 {
+        background-image: url(../img/Reduslim_img_big.svg);
+        width: 560px;
+        height: 500px;
+    }
+
+    &_part_2 {
+        border: 1px solid $borderFormPart2;
+        box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+        width: 560px;
+        background-color: $bgFormPart2;
+
+        &_h1_big, &_h1_small {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 130%;
+            color: $formPart2TextBlackColor;
+            padding-top: 34px;
+            padding-bottom: 36px;
+            background-color: $formPart2h1BigBg;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        &_h1_small {
+            display: none;
+        }
+
+        &_container {
+            width: 329.18px;
+            margin-left: auto;
+            margin-right: auto;
+
+            & ::-webkit-input-placeholder { 
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            & ::-moz-placeholder { 
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            & :-ms-input-placeholder { 
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            & ::-ms-input-placeholder { 
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            & ::placeholder { 
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            & :-moz-placeholder {
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            & ::-moz-placeholder {
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            } 
+            & ::-webkit-input-placeholder {
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            & :-ms-input-placeholder {
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            & ::-ms-input-placeholder { 
+                color: $formPart2TextBlackColor;
+                opacity: 0.2;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+            }
+
+            p:nth-child(1) {
+                margin-top: 36px;
+                margin-bottom: 22px;
+            }
+
+            p:nth-child(2) {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            p {
+                label {
+                    font-weight: 800;
+                    font-size: 12px;
+                    line-height: 130%;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: $formPart2TextBlackColor;
+
+                    span {
+                        color: $formPart2TextGreenColor;
+                    }
+                }
+
+                & .name, & .telephone, & select {
+                    border-radius: 5px;
+                    background-color: $formPart2h1BigBg;
+                    border: 1px solid $formPart2InputBorder;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    padding-left: 20px;
+                    margin-top: 10px;
+                    outline: none;
+                }
+
+                .name {
+                    width: 300px;
+                }
+
+                .telephone {
+                    width: 164px;
+                    margin-right: 15px;
+                    vertical-align: top;
+                    margin-bottom: 38px;
+                }
+
+                select {
+                    width: 116.18px;
+                    appearance: none;
+
+                    option {
+                        padding-left: 20px;
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+    
+                        &:hover {
+                            background-color: $formPart2OptionHover;
+                        }
+                    }
+
+                    .icon-ru {
+                        background: url('../img/icon_ru.svg') no-repeat;
+                        padding: 2px 0 2px 0;
+                        background-position: 32px 2px;
+                    }
+
+                    .icon-en {
+                        background: url('../img/icon_en.svg') no-repeat;
+                        padding: 2px 0 2px 0;
+                        background-position: 32px 2px;
+                    }
+
+                    &.icon-ru,
+                    &.icon-en {
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+                        padding-left: 19px;
+                    }
+
+                    &.icon-ru {
+                        background: url('../img/ru_with_arrow.svg') no-repeat;
+                        background-position: 52px 16px;
+                        background-color: $formPart2h1BigBg;
+                    }
+
+                    &.icon-en {
+                        background: url('../img/en_with_arrow.svg') no-repeat;
+                        background-position: 52px 16px;
+                        background-color: $formPart2h1BigBg;
+                    }
+                }
+            }
+
+            .btn_zakaz {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 130%;
+                color: $bgFormPart2;
+                display: inline-block;
+                width: 209px;
+                padding-left: 114.5px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: $formPart2TextGreenColor;
+                border-radius: 5px;
+                margin-bottom: 50px;
+
+                &::after {
+                    content: url(../img/arrow_btn.svg);
+                    margin-left: 10px;
+                }
+
+                &:hover::after {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        
+    }
+
+    &_footer {
+        display: none;
+    }
+}
+
